@@ -1,0 +1,29 @@
+.formation-box{
+  padding: 3rem 0;
+  .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .item{
+      text-align: center;
+      margin-bottom: 3rem;
+      .timeline{
+        text-align: center;
+        margin-bottom: 1rem
+      }
+      .item-logo{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        img{
+          max-width: 260px;
+        }
+      }
+
+    }
+
+  }
+
+}

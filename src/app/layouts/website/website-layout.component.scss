@@ -1,0 +1,17 @@
+.main-content{
+  background-color: #424242;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap-content{
+  max-width: 56rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}

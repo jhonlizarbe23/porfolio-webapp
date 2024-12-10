@@ -1,0 +1,68 @@
+<div class="box-home w-100" style="max-width: 100%">
+  <section id="sobre-mi" class="style1">
+    <div class="wrapper-img col-sm-5">
+      <img src="/assets/images/bn-1.png" class="w-100 h-100">
+    </div>
+    <div class="content col-sm-7">
+      <div class="title">
+        <h6 class="ff-regular mb-1">Sobre mí</h6>
+        <div class="line-title"></div>
+      </div>
+      <p class="ff-light fs-normal">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+      <p class="ff-light fs-normal">Cuando un impresor persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. Cuando un impresor persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+      <p class="ff-light fs-normal">Cuando un impresor persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+    </div>
+  </section>
+  <section id="especialidad" class="style2">
+    <div class="content col-sm-6">
+      <div class="title">
+        <h6 class="ff-regular mb-1">Especialista en desarrollo frontend y backend</h6>
+        <div class="line-title"></div>
+      </div>
+      <p class="ff-light fs-normal">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+      <p class="ff-light fs-normal">Cuando un impresor persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+      <div class="items-circle">
+          <div class="item-circle">
+            <img src="/assets/images/frontend.jpg" class="img-fluid" alt="CircleImage">
+          </div>
+        <div class="item-circle">
+          <img src="/assets/images/certificacion.png" class="img-fluid" alt="CircleImage">
+        </div>
+        <div class="item-circle">
+          <img src="/assets/images/certificacion.png" class="img-fluid" alt="CircleImage">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="wrapper-img">
+        <img src="/assets/images/bn-2.png" class="img-fluid">
+      </div>
+    </div>
+
+  </section>
+  <section id="projects" class="style3">
+    <div class="title">
+      <h6 class="ff-regular mb-1">Proyectos </h6>
+      <div class="line-title"></div>
+      <br>
+      <p class="ff-light fs-normal">Algunos de los proyectos en el que he contribuido:</p>
+    </div>
+    <div class="w-100">
+      <p-carousel [value]="projectsList" [numVisible]="3" [showNavigators]="false" [numScroll]="1"  [circular]="false" [responsiveOptions]="responsiveOptions">
+        <ng-template let-item pTemplate="item">
+          <div class="border-1 surface-border border-round m-1 text-center py-2">
+            <div class="mb-3">
+              <img [src]="item.uriImg" alt="Image" class="img-fluid" />
+            </div>
+            <div class="wrapper-redirect">
+              <p class="ff-regular fs-normal">
+                <a class="cc-grey" [href]="item.redirectLink" target="_blank">{{ item.title }}</a>
+              </p>
+              <p class="ff-light fs-small">{{ item.description }}</p>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </section>
+</div>
