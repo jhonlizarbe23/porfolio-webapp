@@ -10,6 +10,14 @@
     text-align: justify;
   }
 
+  .social-networks{
+    display: flex;
+    flex-wrap: wrap;
+    .wrapper-btn{
+      padding-right: 0.25rem;
+    }
+  }
+
   .role{
     margin-top: 0rem;
     margin-bottom: 0.5rem;
