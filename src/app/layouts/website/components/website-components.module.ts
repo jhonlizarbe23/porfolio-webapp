@@ -9,6 +9,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {RouterModule} from "@angular/router";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatButtonModule} from '@angular/material/button';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatTabsModule,
     RouterModule,
     MatChipsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   exports:[
     FooterComponent,

@@ -14,6 +14,7 @@ import { registerLocaleData } from '@angular/common';
 import { WebsiteLayoutComponent } from './layouts/website/website-layout.component';
 import { WebsiteComponentsModule } from './layouts/website/components/website-components.module';
 import {AuthLayoutComponent} from "./layouts/auth/auth-layout.component";
+import {MatSlideToggle} from "@angular/material/slide-toggle";
 registerLocaleData(es);
 
 @NgModule({
@@ -22,14 +23,15 @@ registerLocaleData(es);
     WebsiteLayoutComponent,
     AuthLayoutComponent
   ],
-  imports: [
-    WebsiteComponentsModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    RouterModule,
-    FormsModule
-  ],
+    imports: [
+        WebsiteComponentsModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        RouterModule,
+        FormsModule,
+        MatSlideToggle
+    ],
   providers: [
     provideAnimationsAsync(),
     { provide: LOCALE_ID, useValue: 'es' }

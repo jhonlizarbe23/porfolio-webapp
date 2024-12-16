@@ -1,5 +1,11 @@
-<div class="main-content">
+<div [ngClass]="modeLight ? 'main-content mode-light' : 'main-content mode-dark'">
   <div class="wrap-content">
+    <div class="w-100 text-center set-background my-2">
+      <mat-slide-toggle
+        #darkModeSwitch
+        (change)="changeTheme()"
+      ></mat-slide-toggle>
+    </div>
     <app-header></app-header>
     <main>
       <router-outlet></router-outlet>

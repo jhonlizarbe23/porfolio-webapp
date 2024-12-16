@@ -1,8 +1,15 @@
 .main-content{
-  background-color: #424242;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.main-content.mode-light{
+  background-color: #f4f4f4;
+}
+
+.main-content.mode-dark{
+  background-color: #2b2b2b;
 }
 
 .wrap-content{

@@ -33,4 +33,6 @@ import { CarouselModule } from 'primeng/carousel';
     CarouselModule
   ]
 })
-export class WebsiteLayoutModule { }
+export class WebsiteLayoutModule {
+
+}
