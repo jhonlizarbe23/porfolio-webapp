@@ -10,7 +10,9 @@ import { FormationPageComponent } from './pages/formation-page/formation-page.co
 import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
 import { CertificationsPageComponent } from './pages/certifications-page/certifications-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
-import {MatChipsModule} from "@angular/material/chips";
+import {MatChipsModule} from "@angular/material/chips"
+import {MatButtonModule} from '@angular/material/button';
+import {MatMiniFabButton} from '@angular/material/button';
 
 import { CarouselModule } from 'primeng/carousel';
 
@@ -30,7 +32,9 @@ import { CarouselModule } from 'primeng/carousel';
     ReactiveFormsModule,
     MatTabsModule,
     MatChipsModule,
-    CarouselModule
+    CarouselModule,
+    MatButtonModule,
+    MatMiniFabButton
   ]
 })
 export class WebsiteLayoutModule {

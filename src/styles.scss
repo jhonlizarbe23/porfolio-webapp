@@ -606,15 +606,18 @@ select {
   .custom-btn-primary:hover{
     border-color: #3B82F6 !important;
   }
-  .nav-link{
+  .nav-link,
+  .menu-link{
     border: 1px solid #3c5c92 !important;
     color: #cacaca !important;
   }
-  .nav-link:hover{
+  .nav-link:hover,
+  .menu-link:hover{
     transition: 0.25s ease-in-out;
     border: 1px solid #3B82F6 !important;
   }
-  .nav-link.active{
+  .nav-link.active,
+  .menu-link.active{
     color: #FFF !important;
     border: 1px solid #3B82F6 !important;
   }
@@ -628,7 +631,8 @@ select {
   .work-experience-box,
   .formation-box,
   .skills-box,
-  .certification-box{
+  .certification-box,
+  .mat-drawer{
     background-color: var(--bg-dark) !important;
     .card-item .card-logo,
     .card-item,

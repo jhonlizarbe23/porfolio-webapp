@@ -1,3 +1,15 @@
+<div class="box-before-header w-100">
+  <button (click)="onToggleDrawer()" mat-icon-button class="d-flex align-items-center justify-content-center d-sm-none">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+  <div class="set-mode-content py-2">
+    <mat-slide-toggle
+      #darkModeSwitch
+      (change)="onToggleSwitchMode()"
+    ></mat-slide-toggle>
+  </div>
+</div>
+
 <div class="header-box">
 
   <div class="box-short-info me-auto col-sm-8">
@@ -49,11 +61,8 @@
   </div>
 
   <div class="w-100">
-    <nav class="navbar navbar-expand-lg navbar-header">
+    <nav class="navbar navbar-header navbar-expand-sm">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
