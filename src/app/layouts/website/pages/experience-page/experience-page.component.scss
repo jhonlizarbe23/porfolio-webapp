@@ -6,6 +6,7 @@
       display: flex;
       border: 1px solid #eee;
       border-radius: 8px;
+      flex-wrap: wrap;
 
       .card-logo {
         max-width: 460px;
@@ -57,3 +58,23 @@
   }
 }
 
+
+// Media queries
+// Mobile
+@media only screen and (min-width: 320px) and (max-width: 580px){
+  .work-experience-box{
+    .wrapper-card-item{
+      padding: 1rem;
+      .card-item{
+        width: 100%;
+        .card-logo{
+          width: 100%;
+          max-width: 100%;
+          border-right: none;
+          border-bottom: 1px solid #eee;
+          max-height: 140px;
+        }
+      }
+    }
+  }
+}

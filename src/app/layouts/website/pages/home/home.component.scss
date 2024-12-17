@@ -85,7 +85,7 @@
   .title{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 0.40rem;
     .line-title{
       height: 2.5px;
       width: 30px;
@@ -93,4 +93,39 @@
     }
   }
 
+}
+
+// Media queries
+// Mobile
+@media only screen and (min-width: 320px) and (max-width: 580px){
+  .box-home{
+    padding: 1rem;
+    .wrapper-img{
+      width: 100%;
+    }
+    .content{
+      margin-top: 1rem;
+      padding: 0rem 0rem 0rem 0rem !important;
+    }
+    .style2{
+      .banner{
+        .banner-content.development{
+          flex-flow: column-reverse;
+        }
+        .banner-content.devops{
+          flex-flow: column;
+        }
+        .banner-content{
+          padding: 1rem 0;
+          justify-content: center;
+          .group-images{
+            transform:scale(0.9);
+          }
+          .group-text{
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -10,6 +10,7 @@ import {RouterModule} from "@angular/router";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatButtonModule} from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     RouterModule,
     MatChipsModule,
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTooltipModule
   ],
   exports:[
     FooterComponent,
