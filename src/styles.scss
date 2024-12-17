@@ -564,3 +564,81 @@ select {
   background-color: #3f51b5;
   color: #FFF;
 }
+
+
+///
+.main-content.mode-light{
+  background-color: #f4f4f4;
+}
+
+.main-content.mode-dark{
+  --bg-dark: rgb(3 7 18 / 1);
+  background-color: var(--bg-dark);
+
+  .wrap-content{
+    background-color: var(--bg-dark) !important;
+  }
+
+  .line-title{
+    background-color: #3B82F6 !important;
+  }
+  .set-mode-content{
+    background-color: var(--bg-dark) !important;
+  }
+  h1,h2,h3,h4,h5,h6,p,label,small,span,a{
+    color: #fff !important;
+  }
+  .material-symbols-outlined{
+    color: #f4f4f4 !important;
+  }
+  .ff-semibold{
+    color: #d4d4d4 !important;
+  }
+
+  a,
+  .custom-btn-primary{
+    background-color: transparent !important;
+  }
+  .custom-btn-primary{
+    color: #FFF;
+  }
+  a:hover,
+  .custom-btn-primary:hover{
+    border-color: #3B82F6 !important;
+  }
+  .nav-link{
+    border: 1px solid #3c5c92 !important;
+    color: #cacaca !important;
+  }
+  .nav-link:hover{
+    transition: 0.25s ease-in-out;
+    border: 1px solid #3B82F6 !important;
+  }
+  .nav-link.active{
+    color: #FFF !important;
+    border: 1px solid #3B82F6 !important;
+  }
+
+  .header-box{
+    border-bottom: 1px solid #3B82F6 !important;
+  }
+
+  .header-box,
+  .box-home,
+  .work-experience-box,
+  .formation-box,
+  .skills-box,
+  .certification-box{
+    background-color: var(--bg-dark) !important;
+    .card-item .card-logo,
+    .card-item,
+    .style1 .wrapper-content,
+    .style3,
+    .wrapper-logo{
+      border: 1px solid #3B82F6 !important;
+    }
+  }
+  .footer-box{
+    background-color: var(--bg-dark) !important;
+  }
+}

@@ -1,5 +1,5 @@
 .box-home{
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   .style1{
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
       .wrapper-content{
         border-radius: 12px;
         padding: 1rem 2rem;
-        background-color: #f6f6f6;
+        border: 1px solid #eee;
         display: flex;
         flex-direction: column;
         text-align: justify;
