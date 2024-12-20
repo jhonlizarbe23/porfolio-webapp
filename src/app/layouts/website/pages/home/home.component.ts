@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProjectModel} from '../../models/projectModel.interface';
+import {environment} from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import {ProjectModel} from '../../models/projectModel.interface';
 export class HomeComponent implements OnInit {
 
   responsiveOptions: any[] | undefined;
+  assetsImagesUri: string = environment.assetImagesUri;
 
   // Models
   projectsList: Array<ProjectModel> = [];

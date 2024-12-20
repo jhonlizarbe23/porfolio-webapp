@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-projects-page',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects-page.component.scss']
 })
 export class ProjectsPageComponent {
+
+  assetsImagesUri: string = environment.assetImagesUri;
 
 }

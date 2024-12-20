@@ -8,6 +8,7 @@ import {
   Output,
   ViewChild
 } from '@angular/core';
+import {environment} from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,8 @@ import {
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements AfterViewInit {
+
+  assetsImagesUri: string = environment.assetImagesUri;
 
   // switchMode
   @ViewChild('darkModeSwitch', { read: ElementRef }) element: ElementRef | undefined;
