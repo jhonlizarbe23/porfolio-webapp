@@ -10,4 +10,12 @@ export class CertificationsPageComponent {
 
   assetsImagesUri: string = environment.assetImagesUri;
 
+  onDownloadFile(path: string, filename: string){
+    let pathLink = document.createElement('a');
+    pathLink.download = filename;
+    pathLink.href = path;
+    pathLink.target = '_blank';
+    pathLink.click();
+  }
+
 }
