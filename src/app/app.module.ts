@@ -14,6 +14,10 @@ import { registerLocaleData } from '@angular/common';
 import { WebsiteLayoutComponent } from './layouts/website/website-layout.component';
 import { WebsiteComponentsModule } from './layouts/website/components/website-components.module';
 import {AuthLayoutComponent} from "./layouts/auth/auth-layout.component";
+import {MatSlideToggle} from "@angular/material/slide-toggle";
+import {MatIconButton} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 registerLocaleData(es);
 
 @NgModule({
@@ -28,7 +32,10 @@ registerLocaleData(es);
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    MatSlideToggle,
+    MatIconButton,
+    MatSidenavModule
   ],
   providers: [
     provideAnimationsAsync(),
