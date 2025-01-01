@@ -1,1 +1,39 @@
-<p>drawer works!</p>
+<div class="box-drawer">
+  <ul class="menu-drawer">
+    <li class="menu-title">
+      <span class="ff-light fs-small">MENU PRINCIPAL</span>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link fs-normal ff-light" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
+        <span class="material-symbols-outlined me-2">home</span>
+        Inicio
+      </a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link fs-normal ff-light" [routerLink]="['experiencia-laboral']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
+        <span class="material-symbols-outlined me-2">business_center</span>
+        Experiencia laboral</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link fs-normal ff-light" [routerLink]="['formacion']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
+        <span class="material-symbols-outlined me-2">school</span>
+        Formación</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link fs-normal ff-light" [routerLink]="['skills']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
+        <span class="material-symbols-outlined me-2">star</span>
+        Skills
+      </a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link fs-normal ff-light" [routerLink]="['certificaciones']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">
+        <span class="material-symbols-outlined me-2">workspace_premium</span>
+        Certificaciones</a>
+    </li>
+  </ul>
+</div>

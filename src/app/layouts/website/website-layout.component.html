@@ -1,9 +1,16 @@
-<div class="main-content">
+<div [ngClass]="darkModeSwitch ? 'main-content mode-dark' : 'main-content mode-light'">
   <div class="wrap-content">
-    <app-header></app-header>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
+    <app-header (toggleSwitchEvent)="handleEventSwitchMode($event)" [darkModeEnabled]="darkModeSwitch" (toggleDrawerEvent)="handleEventDrawer($event)" [openDrawer]="openDrawer"></app-header>
+    <mat-drawer-container class="example-container" autosize>
+      <mat-drawer autoFocus="false" mode="over" [opened]="openDrawer" (closedStart)="onCloseMenu()">
+        <app-drawer></app-drawer>
+      </mat-drawer>
+      <mat-drawer-content>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-drawer-content>
+    </mat-drawer-container>
     <app-footer></app-footer>
   </div>
 </div>
