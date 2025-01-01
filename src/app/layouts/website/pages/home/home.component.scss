@@ -80,6 +80,12 @@
     padding: 1rem 2rem;
     margin-top: 1rem;
     border: 1px solid #eee;
+
+    .wrapper-img{
+      border: 1px solid #eee !important;
+      max-width: 260px;
+    }
+
   }
 
   .title{
@@ -107,6 +113,11 @@
       margin-top: 1rem;
       padding: 0rem 0rem 0rem 0rem !important;
     }
+    .style1{
+      .wrapper-content{
+        padding: 1rem !important;
+      }
+    }
     .style2{
       .banner{
         .banner-content.development{
@@ -126,6 +137,9 @@
           }
         }
       }
+    }
+    .style3{
+      padding: 1rem !important;
     }
   }
 }

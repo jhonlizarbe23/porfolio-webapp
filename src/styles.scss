@@ -135,6 +135,31 @@ $porfolio-webapp-theme: mat.define-theme((
   height: 28px !important;
 }
 
+// carrousel
+.p-carousel{
+  align-items: center;
+}
+
+.p-carousel-content{
+  max-width: 100%;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button{
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+
+.p-carousel .p-carousel-indicators {
+  display: none !important;
+}
+
+.p-carousel-item .surface-border{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 // Tabs
 .mat-mdc-tab{
   font-family: Nova-Book, sans-serif !important;
@@ -623,7 +648,7 @@ select {
   }
 
   .header-box,
-  .box-before-header{
+  .box-before-headers{
     border-bottom: 1px solid #3B82F6 !important;
   }
 
@@ -645,5 +670,13 @@ select {
   }
   .footer-box{
     background-color: var(--bg-dark) !important;
+  }
+}
+
+// Media queries
+// Mobile
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .p-carousel-content{
+    max-width: 310px !important;
   }
 }

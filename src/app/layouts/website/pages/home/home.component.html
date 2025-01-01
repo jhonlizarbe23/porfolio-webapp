@@ -109,10 +109,10 @@
       <p class="ff-light fs-normal">Algunos de los proyectos en el que he contribuido:</p>
     </div>
     <div class="w-100">
-      <p-carousel [value]="projectsList" [numVisible]="3" [showNavigators]="false" [numScroll]="1"  [circular]="false" [responsiveOptions]="responsiveOptions">
+      <p-carousel [value]="projectsList" [numVisible]="3" [showNavigators]="true" [numScroll]="1"  [circular]="false" [responsiveOptions]="responsiveOptions">
         <ng-template let-item pTemplate="item">
           <div class="border-1 surface-border border-round m-1 text-center py-2">
-            <div class="mb-3">
+            <div class="mb-3 wrapper-img">
               <img [src]="item.uriImg" alt="Image" class="img-fluid" />
             </div>
             <div class="wrapper-redirect">
